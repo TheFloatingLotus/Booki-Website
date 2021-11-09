@@ -1,2 +1,2 @@
-# Bookie-Website
+# Booki-Website
 Project for OpenClassrooms
