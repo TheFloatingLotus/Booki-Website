@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href="./index.css" type="text/css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3454e3873d.js" crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booki</title>
+
+</head>
+
+<header>
+  <header class="pageheader">
+    <div class="flexbox">
+      <div class="logo">
+      <img class="img" src="./Resources/Images/logo/Booki logo small.png" alt="Booki logo"/></div> 
+      <div class="navbar">
+        <nav class="nav-item"><a href="#">Accomodations</a></nav>
+      </div> 
+      <div class="navbar">
+        <nav class="nav-item"><a href="#">Activites</a></nav>
+      </div>   
+    </div>
+    <div class="flexbox">
+      <div class="left-text">
+        <h1>Find a place for your dream vacation</h1>
+        <p>Downtown or in nature</p>
+      </div>
+    </div>
+    <div class="flexbox">
+      <form class="searchbar">
+        <form>
+          <button class="mapbutton"><i class="fas fa-map-marker-alt"></i></button>
+          <input class="searchbox" type="text" placeholder="Marseille, France">
+          <input class="searchbutton" type="submit" value="Search">
+          <button class="searchicon"><i class="fas fa-search"></i></button>
+          <aria-label="Search through site content"></aria-label>
+        </form>
+      </form>
+    </div>
+  </header>
+</header>
+
+<body>
+  <body class="mainpage">
+    <p><b>Filters</b></p>
+      <button class="btn" onclick="filterSelection('low cost')"> Low cost</button>
+      <button class="btn" onclick="filterSelection('family-friendly')"> Family-friendly</button>
+      <button class="btn" onclick="filterSelection('romantic')"> Romantic</button>
+      <button class="btn" onclick="filterSelection('pets allowed')"> Pets allowed</button>
+  </body>
+</body>
+
+</html>
