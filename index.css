@@ -1,0 +1,653 @@
+@font-face {
+  font-family: Raleway, sans-serif;
+  src: url("font/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Raleway, sans-serif;
+  src: url("font/Raleway-Italic-VariableFont_wght.ttf");
+  font-style: italic, oblique
+}
+
+h1 {
+  font-family: Raleway, sans-serif;
+  color: black;
+  font-size: 18px;
+}
+   
+p {
+  font-family: Raleway, sans-serif;
+  color: black;
+  font-size: 14px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (min-width: 992px) {
+
+  .pageheader {
+  padding: 10px;
+  background: #fff;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  }
+
+  .mainpage {
+  margin-top: 200px; 
+  padding: 5px;
+  }
+
+  .flexbox {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  }
+
+  .logo {
+  margin-right: auto; 
+  padding-top: 32px;
+  }
+
+  .left-text {
+  margin-right: auto; 
+  }
+
+  .nav-item {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  color: black;
+  font-size: 18px;
+  display: inline-block;
+  padding-top: 32px
+  }
+
+  .nav-item a:link {
+  text-decoration: none;
+  padding: 10px 20px;
+  padding-top: 30px
+  }
+
+  .nav-item a:visited {
+  text-decoration: none;
+  padding: 10px 20px;
+  padding-top: 30px
+  }
+
+  .nav-item a:hover {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #0065FC;
+  border-top: 2px solid #0065FC;
+  padding-top: 28px
+  }
+
+  .searchbar {
+  display: flex;
+  position: sticky;
+  margin-right: auto;
+  max-width: 310px;
+  max-height: 40px;
+  margin: none;
+  }
+
+  .mapbutton {
+  height: 40px;
+  width: 40px;
+  background-color: #F2F2F2;
+  color: black;
+  border: none;
+  border-radius: 15px 0 0 15px;
+  font-size: 30;
+  }
+
+  .searchbox {
+  font-weight: bold;
+  height: 40px;
+  width: 100%;
+  border: 1px solid #F2F2F2;
+  outline : none;
+  padding-left: 5%;
+  }
+
+  .searchbutton {
+  width: 70px;
+  height: 40px;
+  background-color: #0065FC;
+  color: white;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  }
+
+  .searchicon {
+  display: none; 
+  }
+
+  .filterflexbox {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 20px;
+  }
+
+  .filtertext {
+  margin-right: 15px;
+  }
+
+  .filterbtn {
+  margin-right: 15px;
+  display: flex;
+  display: row;
+  max-width: 200px;
+  height: 40px;
+  border: 2px solid #F2F2F2;
+  border-radius: 25px;
+  align-items: center;
+  }
+
+  .filterbtnicon {
+  min-width: 40px;
+  height: 40px;
+  background-color: #DEEBFF;
+  color: #0065FC;
+  border: none;
+  border-radius: 25px 25px 25px 25px;
+  }
+
+  .filterbtntext {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  text-align: center;
+  }
+
+  .filterbtntext:hover {
+  color: #0065FC;
+  }
+
+  .card1 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 200px;
+  height: 170px;
+  border-radius: 15px 15px 15px 15px;
+  margin: 2%;
+  background-color: #fff;
+  }
+  
+  .card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card1 :hover h1 {
+  color: #0065FC;
+  }
+
+  .card1:hover p {
+  color: #0065FC;
+  }
+
+  .img1 {
+  border-radius: 15px 15px 0 0;
+  padding: 2% 2% 0% 2%;
+  width: 200px;
+  height: 90px;
+  object-fit: cover;
+  }
+  
+  .container1 {
+  padding: 0% 2% 2% 10%
+  }
+
+  .container1 h1 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: .8;
+  }
+
+  .container1 p {
+  font-size: 12px;
+  line-height: .8;
+  }
+
+  .star-rating {
+  display: flex;
+  color: #F2F2F2;
+  font-size: 10px;
+  }
+
+  .starclick {
+  color:#0065FC;
+  }
+
+  .card2 {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  height: 120px;
+  border-radius: 15px 15px 15px 15px;
+  margin: 2%;
+  background-color: #fff;
+  }
+  
+  .card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card2:hover h1 {
+  color: #0065FC;
+  }
+
+  .card2:hover p {
+  color: #0065FC;
+  }
+  
+  .img2 {
+  border-radius: 15px 0 0 15px;
+  padding: 4% 0% 4% 4%;
+  width: 100%;
+  height: 120px;
+  width: 110px;
+  object-fit: cover;
+  }
+  
+  .container2 {
+  padding: 0% 2% 2% 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  }
+
+  .container2 h1 {
+  font-size: 13px;
+  font-weight: 700;
+  padding-top: 5%;
+  flex-grow: 1;
+  }
+  
+  .container2 p {
+  font-size: 12px;
+  flex-grow: 0;
+  position: absolute; 
+  bottom: 42px;
+  left: 30px;
+  }
+
+  .star-rating2 {
+  color: #F2F2F2;
+  font-size: 10px;
+  margin-top: auto;
+  padding-bottom: 5%;
+  }
+
+  .options {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-evenly;
+  height: 500px;
+  padding-top: 2%;
+  }
+
+  .accomodation-marseilles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 840px;
+  height: 500px;
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  margin-right: auto;
+  }
+
+  .accomodation-marseilles h1 {
+  flex-basis: 100%;
+  }
+
+  .most-popular h1 {
+  flex-basis: 100%;
+  }
+
+  .most-popular {
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
+  height: 500px;
+  background-color: #F2F2F2;
+  justify-content: space-evenly;
+  border-radius: 25px;
+  margin-left: auto;
+  }
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  .pageheader {
+  padding: 10px;
+  background: #fff;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  }
+  
+  .mainpage {
+  margin-top: 200px; 
+  padding: 5px;
+  }
+
+  .flexbox {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  }
+  
+  .logo {
+  margin-right: auto; 
+  padding-top: 32px;
+  }
+
+  .left-text {
+  margin-right: auto; 
+  }
+
+  .nav-item {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  color: black;
+  font-size: 18px;
+  display: inline-block;
+  padding-top: 32px
+  }
+
+  .nav-item a:link {
+  text-decoration: none;
+  padding: 10px 20px;
+  padding-top: 30px
+  }
+
+  .nav-item a:visited {
+  text-decoration: none;
+  padding: 10px 20px;
+  padding-top: 30px
+  }
+
+  .nav-item a:hover {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #0065FC;
+  border-top: 2px solid #0065FC;
+  padding-top: 28px
+  }
+
+  .searchbar {
+  display: flex;
+  position: sticky;
+  margin-right: auto;
+  max-width: 310px;
+  max-height: 40px;
+  margin: none;
+  }
+  
+  .mapbutton {
+  height: 40px;
+  width: 40px;
+  background-color: #F2F2F2;
+  color: black;
+  border: none;
+  border-radius: 15px 0 0 15px;
+  font-size: 30;
+  }
+  
+  .searchbox {
+  font-weight: bold;
+  height: 40px;
+  width: 100%;
+  outline : none;
+  border: 1px solid #F2F2F2;
+  padding-left: 5%;
+  }
+  
+  .searchbutton {
+  width: 70px;
+  height: 40px;
+  background-color: #0065FC;
+  color: fff;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  }
+  
+  .searchicon {
+  display: none; 
+  }
+
+  .filterflexbox {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 20px;
+  }
+    
+  .filtertext {
+  margin-right: 15px;
+  }
+    
+  .filterbtn {
+  margin-right: 15px;
+  display: flex;
+  display: row;
+  max-width: 200px;
+  height: 40px;
+  border: 2px solid #F2F2F2;
+  border-radius: 25px;
+  align-items: center;
+  }
+    
+  .filterbtnicon {
+  min-width: 40px;
+  height: 40px;
+  background-color: #DEEBFF;
+  color: #0065FC;
+  border: none;
+  border-radius: 25px 25px 25px 25px;
+  }
+    
+  .filterbtntext {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .pageheader {
+  padding: 10px;
+  background: #fff;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  }
+  
+  .mainpage {
+  margin-top: 200px; 
+  padding: 5px;
+  }
+
+  .flexbox {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+      
+  .logo {
+  flex-basis: 100%;
+  text-align: center;
+  }
+  
+  .img {
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .left-text {
+  margin-right: auto;
+  padding-left: 5%;
+  padding-top: 2%;
+  flex: 2;
+  }
+  
+  .navbar {
+  list-style-type: none;
+  text-decoration: none;
+  flex-basis: 50%;
+  text-align: center;
+  justify-items: stretch;
+  }
+  
+  .nav-item {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  color: black;
+  font-size: 18px;
+  padding-bottom: 10px;
+  flex: 1;
+  }
+      
+  .nav-item a:link {
+  text-decoration: none;
+  padding: 10px 20px;
+  }
+      
+  .nav-item a:visited {
+  text-decoration: none;
+  padding: 10px 20px;
+  }
+      
+  .nav-item a:hover {
+  text-decoration: none;
+  color: #0065FC;
+  padding: 10px 20px;
+  border-bottom: 2px solid #0065FC;
+  }
+
+  .searchbar {
+    display: flex;
+    position: sticky;
+    margin-right: auto;
+    width: 100%;
+    max-height: 40px;
+    margin: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+    
+    .mapbutton {
+    height: 40px;
+    width: 40px;
+    background-color: #F2F2F2;
+    color: black;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    font-size: 30;
+    }
+    
+    .searchbox {
+    font-weight: bold;
+    height: 40px;
+    width: 100%;
+    outline : none;
+    border: 1px solid #F2F2F2;
+    padding-left: 5%;
+    }
+    
+    .searchbutton {
+    display: none;
+    }
+    
+    .searchicon {
+      width: 70px;
+      height: 40px;
+      background-color: #0065FC;
+      color: white;
+      border: none;
+      border-radius: 0 15px 15px 0;
+      }
+  
+
+  .filterflexbox {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  }
+  
+  .filtertext {
+  margin-right: 15px;
+  }
+  
+  .filterbtn {
+  margin-right: 15px;
+  display: flex;
+  display: row;
+  max-width: 100%;
+  height: 40px;
+  border: 2px solid #F2F2F2;
+  border-radius: 25px;
+  align-items: center;
+  margin: 5px;
+  }
+  
+  .filterbtnicon {
+  min-width: 40px;
+  height: 40px;
+  background-color: #DEEBFF;
+  color: #0065FC;
+  border: none;
+  border-radius: 25px 25px 25px 25px;
+  }
+  
+  .filterbtntext {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  text-align: center;
+  }
+}
