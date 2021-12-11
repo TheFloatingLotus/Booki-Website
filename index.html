@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href="./index.css" type="text/css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3454e3873d.js" crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booki</title>
+
+</head>
+
+<nav>
+<div class="pageheader">
+  <div class="flexbox">
+    <div class="logo">
+      <img class="img" src="./Resources/Images/logo/Booki logo small.png" alt="Booki logo"/></div> 
+    <div class="navbar">
+      <nav class="nav-item"><a href="#">Accomodations</a></nav>
+    </div> 
+    <div class="navbar">
+      <nav class="nav-item"><a href="#">Activites</a></nav>
+    </div>   
+  </div>
+  <div class="flexbox">
+    <div class="left-text">
+        <h1>Find a place for your dream vacation</h1>
+        <p>Downtown or in nature</p>
+      </div>
+  </div>
+  <div class="flexbox">
+    <form class="searchbar">
+      <form>
+        <button class="mapbutton"><i class="fas fa-map-marker-alt"></i></button>
+        <input class="searchbox" type="text" placeholder="Marseille, France">
+        <input class="searchbutton" type="submit" value="Search">
+        <button class="searchicon"><i class="fas fa-search"></i></button>
+        <aria-label="Search through site content"></aria-label>
+      </form>
+    </form>
+  </div>
+  <div class="filterflexbox">
+    <div class="filtertext"><p><b>Filters</b></p></div>
+    <div class="filterbtn">
+      <button class="filterbtnicon"><i class="fa fa-solid fa-money-bill-wave"></i></button>
+      <button class="filterbtntext" onclick="filterSelection('low cost')"><b>Low cost</b></button>
+    </div>
+    <div class="filterbtn">
+      <button class="filterbtnicon"><i class="fa fa-solid fa-child"></i></button>
+      <button class="filterbtntext" onclick="filterSelection('family-friendly')"><b>Family-friendly</b></button>
+    </div>
+    <div class="filterbtn">
+      <button class="filterbtnicon"><i class="fa fa-solid fa-heart"></i></button>
+      <button class="filterbtntext" onclick="filterSelection('romantic')"><b>Romantic</b></button>
+    </div>
+    <div class="filterbtn">
+      <button class="filterbtnicon"><i class="fa fa-solid fa-dog"></i></button>
+      <button class="filterbtntext" onclick="filterSelection('pets allowed')"><b>Pets allowed</b></button>
+    </div>
+  </div>
+</div>
+</nav>
+
+<body>
+  <div class="homepage">
+    <div class="filter-return">
+      <button class="filter-return-icon"><i class="fa fa-solid fa-info"></i></button>
+      <p>More than 500 acccomodations are available in this city</p>
+    </div>
+    <div class="options">
+      <div class="accomodation-marseilles">
+        <div class="accom-mars-title">
+          <h1>Accomodations in Marseilles</h1>
+        </div>
+        <div class="marseille-cards">
+          <div class="marseille-cards-top">
+          <div class="card1">
+            <img class="img1" src="./Resources/Images/hebergements/4_small/Auberge la Cannebière.jpg" alt="A room in the Cannebière Inn">
+            <div class="container1">
+              <h2>Auberge la Cannebière</h2> 
+              <p>Night starting at <b>25€</b></p> 
+              <div class="star-rating">
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <i class="fa fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card1">
+            <img class="img1" src="./Resources/Images/hebergements/4_small/Hotel du port.jpg" alt="A room in Hôtel du port">
+            <div class="container1">
+              <h2>Hôtel du port</h2> 
+              <p>Night starting at <b>52€</b></p> 
+              <div class="star-rating">
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+              </div>
+            </div>  
+          </div>
+          <div class="card1">
+            <img class="img1" src="./Resources/Images/hebergements/4_small/Les mouettes Hotel.jpg" alt="A room in Les mouettes H0tel">
+              <div class="container1">
+                <h2>Les mouettes Hotel</h2> 
+                <p>Night starting at <b>76€</b></p> 
+                <div class="star-rating">
+                  <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                  <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                  <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                  <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                  <i class="fa fa-solid fa-star"></i>
+                </div>
+              </div>
+          </div>
+          </div>
+          <div class="marseille-cards-bottom">
+          <div class="card1">
+            <img class="img1" src="./Resources/Images/hebergements/4_small/Hotel de la mer.jpg" alt="A room in Hôtel de la mer">
+            <div class="container1">
+              <h2>Hôtel de la mer</h2> 
+              <p>Night starting at <b>46€</b></p> 
+              <div class="star-rating">
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <i class="fa fa-solid fa-star"></i>
+                <i class="fa fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card1">
+            <img class="img1" src="./Resources/Images/hebergements/4_small/Auberge le Panier.jpg" alt="A room in Auberge le Panier">
+            <div class="container1">
+              <h2>Auberge le Panier</h2> 
+              <p>Night starting at <b>23€</b></p> 
+              <div class="star-rating">
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <i class="fa fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card1">
+            <img class="img1" src="./Resources/Images/hebergements/4_small/Hotel chez Amina.jpg" alt="A room in Hôtel chez Amina">
+            <div class="container1">
+              <h2>Hôtel chez Amina</h2> 
+              <p>Night starting at <b>96€</b></p> 
+              <div class="star-rating">
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+              </div>
+            </div>
+          </div>  
+          </div>
+        </div>
+        <div class="show-more">
+          <h1>Show more</h1>
+        </div>
+      </div>
+      
+      <div class="most-popular">
+        <div class="most-pop-title">
+          <h1>Most Popular</h1>
+          <i class="fa fa-solid fa-chart-line fa-lg"></i>
+        </div>
+        <div class="popular-cards">
+          <div class="card2">
+            <div class="imgbox1">
+              <img class="img2" src="./Resources/Images/hebergements/4_small/Morning Sun Hotel.jpg" alt="A room in the Morning Sun Hotel" style="height:100%">
+            </div>
+            <div class="container2">
+              <h2><b>Morning Sun Hotel</b></h2> 
+              <p>Night starting at <b>128€</b></p> 
+              <div class="star-rating2">
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+              </div>
+            </div>  
+          </div>
+          <div class="card2">
+            <div class="imgbox1">
+              <img class="img2" src="./Resources/Images/hebergements/4_small/Au cœur de l'eau Bed and Breakfast.jpg" alt="A room in Au cœur de l'eau Bed and Breakfast" style="height:100%">
+            </div>
+            <div class="container2">
+              <h2><b>Au cœur de l'eau Bed and Breakfast</b></h2> 
+              <p>Night starting at <b>71€</b></p> 
+              <div class="star-rating2">
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <i class="fa fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card2">
+            <div class="imgbox1">
+              <img class="img2" src="./Resources/Images/hebergements/4_small/Tout bleu et Blanc Hotel.jpg" alt="A room in the Tout bleu et Blanc Hotel" style="height:100%">
+              </div>
+            <div class="container2">
+              <h2><b>Tout bleu et Blanc Hotel</b></h2> 
+              <p>Night starting at <b>68€</b></p> 
+              <div class="star-rating2">
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <span class="starclick"><i class="fa fa-solid fa-star"></i></span>
+                <i class="fa fa-solid fa-star"></i>
+              </div>
+            </div>
+        </div>    
+          </div>
+        </div>
+      </div>
+      <div class="activities">
+        <h1>Activites in Marseille</h1>
+        <div class="activities-images">
+          <div class="card3">
+            <img class="img3" src="./Resources/Images/activites/4_small/Old Port.jpg" alt="Picture of the Old Port">
+            <div class="container3">
+              <h2>Old Port</h2> 
+            </div>
+          </div>  
+          <div class="activities-column">
+            <div class="card4">
+              <img class="img4" src="./Resources/Images/activites/4_small/Pomègues Fort.jpg" alt="Picture of Pomègues Fort">
+              <div class="container4">
+                <h2>Pomègues Fort</h2> 
+              </div>
+            </div> 
+            <div class="card5">
+              <img class="img5" src="./Resources/Images/activites/4_small/Frioul Island.jpg" alt="Picture of Friou Island">
+              <div class="container5">
+                <h2>Frioul Island</h2> 
+              </div>
+            </div>
+          </div>
+          <div class="card3">
+            <img class="img3" src="./Resources/Images/activites/4_small/Calanques National Park.jpg" alt="Picture of Calanques National Park">
+            <div class="container3">
+              <h2>Calanques National Park</h2> 
+            </div>
+          </div> 
+          <div class="activities-column">
+            <div class="card5">
+              <img class="img5" src="./Resources/Images/activites/4_small/Notre-Dame-de-la-Garde.jpg" alt="Picture of Notre-Dame-de-la-Garde">
+              <div class="container5">
+                <h2>Notre-Dame-de-la-Garde</h2> 
+              </div>
+            </div> 
+            <div class="card4">
+              <img class="img4" src="./Resources/Images/activites/4_small/Longchamp Park.jpg" alt="Picture of Longchamp Park">
+              <div class="container4">
+                <h2>Longchamp Park</h2> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<footer>
+  <div class="footer-box">
+    <div class="footer-text">
+      <p><b>About</b></p>
+      <p>Site Map</p>
+      <p>General Terms and Conditions</p>
+      <p>Data and Privacy</p>
+    </div>
+    <div class="footer-text">
+      <p><b>Our Accomodations</b></p>
+      <p>Quality Assessment</p>
+      <p>You have a hotel?</p>
+    </div>
+    <div class="footer-text">
+      <p><b>Assistance</b></p>
+      <p>Hot Desk</p>
+      <p>Contact Us</p>
+    </div>
+  </div>
+</footer>
+
+</html>
